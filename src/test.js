@@ -11,11 +11,4 @@ server.respondWith('GET', '/test-image', mockSuccessData)
 var image = document.createElement('img')
 image.src = '/test-image'
 
-server.respond(function(err, res) {
-
-  if (err) {
-    console.error('err', err)
-  } else {
-    console.info('res', res)
-  }
-})
+server.respond()
