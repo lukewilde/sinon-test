@@ -1,0 +1,17 @@
+{
+  "name": "sinon-browserify",
+  "version": "1.0.0",
+  "description": "A small app to reproduce a sinon/browserify issue",
+  "main": "app.js",
+  "scripts": {
+    "test": "browserify src/test.js -o public/test.js && node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^9.0.8",
+    "connect": "^3.3.5",
+    "serve-static": "^1.9.2",
+    "sinon": "^1.14.1"
+  }
+}
